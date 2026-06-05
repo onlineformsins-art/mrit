@@ -641,9 +641,45 @@ ul {
     
     .hero-buttons {
         flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+    
+    .section {
+        padding: 3rem 0;
+    }
+
+    .join-grid, .services-grid, .news-grid {
+        grid-template-columns: 1fr;
     }
     
     .footer-grid {
         grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1.2rem;
+    }
+    
+    .hero .title {
+        font-size: 2rem;
+    }
+    
+    .hero .subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .join-card, .service-card {
+        padding: 1.5rem;
     }
 }
